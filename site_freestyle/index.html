@@ -1,26 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Hello Cihan</title>
+<meta charset="utf-8">
+<title>Hello Cihan</title>
+
+<!The code below is a style sheet.>
+<style type="text/css">
+	
+	/*This is an element selector*/
+	/*p{
+		color: blue;
+		font-size: 20px;
+		width: 600px;
+	}*/
+	
+	/*	
+	h1{
+		color: red;
+		font-size: 40px;
+		text-align: center;
+		background: green;
+	}
+
+	h2{
+		color: yellow;
+		font-size: 30px;
+		text-align: left;
+	}*/
+
+	/*This is a class selector;*/
+	/*.orange{ color:orange;}*/
+
+	/*This is an id selector*/
+	/*#section_2 { color: green; }*/
+
+	/* you can group the selectors*/
+	/*div, .orange {color: orange;}*/
+
+	/*Element with class selector*/
+	/*h1.myOrangeClass{ 
+		font-size: 70px;
+		color: orange; }*/
+
+	/*Child selector: It will only affect p that is a child of section, but nothing in p */	
+	/*section > p {
+		font-size:20px;
+		background: blue;
+		text-align: center;
+		color:white;
+		opacity: 0.7;
+		font-style: italic;
+	}*/
+
+	/*Descendant selector: In comparison to the child selector, every element that is a descendant of th section will be affected*/	
+	/*section p {
+		font-size:20px;
+		background: blue;
+		text-align: center;
+		color:white;
+		opacity: 0.7;
+		font-style: italic;
+	}*/
+
+	/*Adjacent selector:The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element. Sibling elements must have the same parent element, and "adjacent" means "immediately following".*/
+
+	/*div + p{ 
+		font-style: italic;
+		font-size: 50px;
+		color: red; }*/
+
+	/*General sibling selector:The general sibling selector selects all elements that are siblings of a specified element.*/	
+
+	/*div ~ p{
+		font-size: 50px;
+		color: blue;} */
+
+	/* you can use child selector or descendant selector or any other selector with any element, class or id selector*/
+	/*.orange > p{
+		font-size: 30px;
+		font-style: bold;
+		color:orange;}*/
+</style>
+
+
 </head>
 
 <body>
-	<header> This is my header. </header>
+	<header id="top"> This is my header. </header>
 	<nav>This is used for navigation</nav>
-	<h1>This is the heading 1</h1>
+	<!--<h1 class="orange">This is the heading 1</h1>-->
+	<h1 class="myOrangeClass">This is the heading 1</h1>
+	<h1>This is the heading without myOrangeClass</h1>
 	<div>
 		 You rock! You will finish this course in 2 weeks. You have already made a lot of progress. This website is your own creation. 
 	</div>
-	<h2>This is the heading 2</h2>
+	<h2 >This is the heading 2</h2>
 	<h> This is supposed to be on the second line. </h>
 	<SECTION>
 		This is a section
 		<article>This is an article
 			<section>This is a section in an article.</section>
 		</article>
-	</SECTION>	
-	
+	</SECTION>
+
+	<section>
+		<a name="section_1"></a>
+		
+		<p>This is supposed to be the section 1.Sometimes there is just one step between you and happiness and it’s called – “open up about your feelings”. It happens that we simply can’t express the way we feel towards some person. Have you ever had such a tricky situation? Do you have it now? Well, don’t panic. We’ve listed some of the best paragraphs for her which you can copy or use as inspiration to write your own ones.
+			<div><p>This p element will be unaffected because the child selector is only thinking about p which is a child of section, but not p which is a child of div that is a child of p which is a child of p</p> </div>
+		We live in a digital era when letters may be considered too old-fashioned. However, there’s something romantic and unique about writing a paper letter, especially if you write it to someone special in your life. We’ve got some great examples of long love paragraphs for her which are perfect for this purpose.</p>
+	</section>	
+	<section class="orange" id="section_2">
+		<p>This is supposed to be the section 2.
+		Boys, don’t forget an old but true statement: “A man falls in love through his eyes, a woman through her ears.” We guarantee that your girl will be in seventh heaven if you tell her about your deep love using short ‘I love You’ paragraphs for her. Take your relationship to a higher level of cuteness with nice couple paragraphs and good ‘why I love you’ paragraphs for girls.
+
+		<div><p>This is supposed to be COLORED TOO</p></div>
+
+		<p>
+		Being away from each other, even if it’s temporary, is a harsh trial. In times like that, it is crucial to keep in touch. Everyday phone calls, cute text messages and either short or really long emails are exactly what we are talking about. As for the last, meaningful ‘I miss you’ paragraphs won’t let your better half forget that you think about her every day.
+
+		To cut it short, just remember that it is always the right time to write to your girlfriend or wife about your feelings and nothing works better for this than a romantic paragraph for her sent with love.</p>
+	</section>
+	<section id="section_3">
+		<p> This is supposed to be section 3. I swear each time I look into your eyes I get lost. I believe that you were meant to look only at me and I only at you. That’s why God gave you the most beautiful eyes I have ever seen; to captivate me and to look into my soul. I want to wake up every day looking into your eyes.
+		With you I discovered true love. I now enjoy the goodness if life that I never knew.
+		The beauty of your love has impacted my life like the sea washes the shores.
+		I want to love you with the all in me till the end of days.</p>
+	</section>
+
+	<section id="section_4">
+		<p>This is supposed to be the section 4. Many times in life, we can end up taking the people who are closest to our hearts for granted. I am so used to all of the wonderful things that you do for me and I never want you to think that I do not appreciate everything that you do for me and our relationship. Every minute of every day, I am always so grateful to have you in my life and in my heart.
+		I just wanted to let you know that how much I appreciate having you in my life. For helping me through the bad times and being there to help me celebrate the good times, I cherish all of the moments that we share together. There aren’t enough words in the dictionary for me to tell you how glad I am to have you in my life. I am so lucky to have you by my side. Everything you do for me never goes unnoticed. I don’t know what I did to deserve someone as wonderful as you, but I am eternally grateful to have your love, support, and affection. Thank you for being you, and for having me by your side.
+		I hope you know how much you mean to me. You are such an important part of my life. In fact, you are the center of my life. Everything I do is for us and I hope you know that I am always trying to do the right thing that will make our relationship a stronger one. You have inspired me to be the best version of myself that I can possibly be and I hope that I can somehow repay you for everything that you have done for me. Without you, I would be a completely different person. You have taught me so much about life and because of you, I truly know what love is.</p>
+			</section>
+
 	<aside>What in this is not as important as the rest.
 	</aside>
 	
@@ -61,7 +174,32 @@
 		<! &nbsp; stands for non breaking space>
 	</div>
 
-	<a href="https://www.sap.com/index.html" title="Click to go to the SAP.com"></a>
+	<!The code below is an inline element>
+	<a href="https://www.sap.com/index.html" title="Click to go to the SAP.com"> Click here to go to the SAP.com</a>
+
+	<!The code below is an inline element "a" with a block elemetn "div">
+	<a href="https://www.youtube.com" title="Youtube">
+		<div>Click here to go to the YouTube.com</div>
+	</a>
+
+	<a href="https://www.youtube.com" target="_blank" title="Youtube Page in new tab">
+		<div>Click here to open YouTube on a new tab</div>
+	</a>
+	<ol>
+		<li><a href="#section_2">Bring me to the section 2</a></li>
+		<li> <a href="#section_3">Take me to the section 3</a></li>
+		<li><a href="#section_4">Take me to the section 4</a></li>
+	</ol>
+	
+	<a href="#top">Bring me to the top.</a>
+
+	<div>
+		<h2></h2>
+	</div>
+	<!--<div>
+		<a href="#section_1">Bring me to the section 1</a>
+	</div>-->
+	<img src="http://nycvillagepizza.com/wp-content/uploads/2017/03/adana-kebap.jpg" width="400" height="235" alt="Kebap picture">
 
 </body>
 </html>
