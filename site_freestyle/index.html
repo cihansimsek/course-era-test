@@ -4,9 +4,21 @@
 <meta charset="utf-8">
 <title>Hello Cihan</title>
 
+<!The link below is the style sheet that the html will recall to apply styling.>
+<!--<link rel="stylesheet" href="style.css">-->
+
 <!The code below is a style sheet.>
 <style type="text/css">
 	
+	/*body{
+		margin:0;
+		padding:0;
+		}*/
+
+	/*p{
+		padding: 10px 10px 10px 10px /*Short-cut is just to write 10px
+		background-color:yellow;
+	}*/
 	/*This is an element selector*/
 	/*p{
 		color: blue;
@@ -80,17 +92,104 @@
 		font-size: 30px;
 		font-style: bold;
 		color:orange;}*/
+
+	/*li{list-style: none;}*/
+
+	/*The code below is a pseudo-class*/
+
+	/*a:link, a:visited {
+		text-decoration: none;
+		background-color: blue;
+		border: 2px solid yellow;
+		color: white;
+		display: block;
+		width: 200px;
+		text-align:center;
+		margin-bottom: 5px;	
+		} 
+
+	a:hover, a:active{
+		background-color: green;
+		color: red;
+	}*/
+
+	/*The code below is nth-child pseudo-class. a element is the first child of the div element in the div element*/
+	/*
+	div div a:nth-child(1){
+		font-size: 40px;
+	}*/
+
+	/*
+	ol div:nth-child(odd){
+		background-color: grey;
+	} */
+
+	/*ol div:nth-child(even):hover{
+		background-color: blue;
+		cursor: pointer;
+		font-weight: bold;
+		text-transform: lowercase;
+		font-size: 150%; /* Percentage changes the font size according to the default browser size or device size*/
+		/*font-size: 2em;*/ /*This will increase the font size two times of what the default size is.*/
+		/*font-size: .5em;*/ /*This will decrease the font size to the half of what the default size is.
+		}*/
+	/* hexadecimal blue: #0000ff >> you can also use hexadecimal numbers to specify colour*/	
+
+	/* !important attribute would overwrite everything about p element*/
+	/*
+	p{color: blue !important;}
+	*/
+
+	/*Don't forget to specify a few font families. Not every font type may be available on the user's computer.*/
+	/*p{ font-family: "Times New Roman",Times, serif; }*/
+	
+	
+	#box{
+		background-color: blue;
+		padding: 30px 30px 30px 30px;
+		border: 20px solid black;
+		margin: 80px;
+		height: 100px;
+		width: 400px;
+		box-sizing: border-box; 
+		overflow: auto;
+	}
+
+	body{
+		background-image: url(http://emittistanbul.com/ITE/media/ITEGroup/Content%20Page%20Heroes/visit-istanbul-640x217.jpg) no-repeat top center;
+		/*
+		background-repeat: no-repeat;*/
+		/*Specify x and y*/
+		/*
+		background-position: top center;*/
+	}
+
+	/* The code below will be applied to every element. Some properties are not directly inherited even though they are applied to the parent elements. Specifying something with * will make it apply to every element.
+	*/
+	/*
+	*{box-sizing: border-box;}
+	*/
+
 </style>
 
 
 </head>
 
 <body>
+	
 	<header id="top"> This is my header. </header>
 	<nav>This is used for navigation</nav>
 	<!--<h1 class="orange">This is the heading 1</h1>-->
 	<h1 class="myOrangeClass">This is the heading 1</h1>
 	<h1>This is the heading without myOrangeClass</h1>
+	
+	<div id="box">
+		
+		This div element is created for the box model.
+	</div>
+
+
+
 	<div>
 		 You rock! You will finish this course in 2 weeks. You have already made a lot of progress. This website is your own creation. 
 	</div>
@@ -103,12 +202,13 @@
 		</article>
 	</SECTION>
 
-	<section>
+	<! This is in-line styling>
+	<section style="color: orange; text-align: center;">
 		<a name="section_1"></a>
 		
 		<p>This is supposed to be the section 1.Sometimes there is just one step between you and happiness and it’s called – “open up about your feelings”. It happens that we simply can’t express the way we feel towards some person. Have you ever had such a tricky situation? Do you have it now? Well, don’t panic. We’ve listed some of the best paragraphs for her which you can copy or use as inspiration to write your own ones.
 			<div><p>This p element will be unaffected because the child selector is only thinking about p which is a child of section, but not p which is a child of div that is a child of p which is a child of p</p> </div>
-		We live in a digital era when letters may be considered too old-fashioned. However, there’s something romantic and unique about writing a paper letter, especially if you write it to someone special in your life. We’ve got some great examples of long love paragraphs for her which are perfect for this purpose.</p>
+		<p>We live in a digital era when letters may be considered too old-fashioned. However, there’s something romantic and unique about writing a paper letter, especially if you write it to someone special in your life. We’ve got some great examples of long love paragraphs for her which are perfect for this purpose.</p>
 	</section>	
 	<section class="orange" id="section_2">
 		<p>This is supposed to be the section 2.
@@ -174,20 +274,23 @@
 		<! &nbsp; stands for non breaking space>
 	</div>
 
+	<div>
 	<!The code below is an inline element>
 	<a href="https://www.sap.com/index.html" title="Click to go to the SAP.com"> Click here to go to the SAP.com</a>
 
 	<!The code below is an inline element "a" with a block elemetn "div">
-	<a href="https://www.youtube.com" title="Youtube">
-		<div>Click here to go to the YouTube.com</div>
-	</a>
+	<div><a href="https://www.youtube.com" title="Youtube">
+		Click here to go to the YouTube.com
+	</a></div>
 
 	<a href="https://www.youtube.com" target="_blank" title="Youtube Page in new tab">
 		<div>Click here to open YouTube on a new tab</div>
 	</a>
+	</div>
+
 	<ol>
 		<li><a href="#section_2">Bring me to the section 2</a></li>
-		<li> <a href="#section_3">Take me to the section 3</a></li>
+		<li><a href="#section_3">Take me to the section 3</a></li>
 		<li><a href="#section_4">Take me to the section 4</a></li>
 	</ol>
 	
@@ -200,6 +303,25 @@
 		<a href="#section_1">Bring me to the section 1</a>
 	</div>-->
 	<img src="http://nycvillagepizza.com/wp-content/uploads/2017/03/adana-kebap.jpg" width="400" height="235" alt="Kebap picture">
+
+	<ol>
+		<div>Div 1</div>
+		<div>Div 2</div>
+		<div>Div 3</div>
+		<div>Div 4</div>
+		<div>Div 5</div>
+		<div>Div 6</div>
+		<div>Div 7</div>
+		<div>Div 8</div>
+		<div>Div 9</div>
+		<div>Div 10</div>
+		<div>Div 11</div>
+		<div>Div 12</div>
+		<div>Div 13</div>
+		<div>Div 14</div>
+	</ol>
+
+
 
 </body>
 </html>

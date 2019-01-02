@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a new webpage.</title>
+	<!The code below makes the website responsive for mobile devices. It is important since the mobile phone browsers will try to zoom out if this meta tag is missing>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style type="text/css">
+	/*body{
+		margin: 10px;
+		padding: 10px;
+		}
+	
+	/*div{background-color: grey; margin: 10px; padding: 10px;}
+
+	/*p{
+		width: 50px;
+		height: 50px;
+		padding: 10px;
+		margin: 10px;
+		}*/
+
+		/*p{
+			position: relative;
+			top:50px;
+			left: 50px;
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+		 }*/
+	
+		/*#box1{
+			background-color: red;
+			float:left;
+		}
+		#box2{
+			background-color: yellow;
+			float:left;
+		}
+		#box3{
+			background-color: green;
+			clear: left;
+		}
+		#box4{
+			background-color: purple;
+			float:left;
+		}
+
+	section {clear: left; /*This will clear the and what this is doing is telling the browser that the section element is announcing that nothing should be allowed to be floating to the left of it.*/
+
+	/* The code below is a media query. It is crucial for the responsiveness of the webpage. The if contiditon>> with-in parantheses */	
+	@media (max-width: 800px){
+		header{color: blue;}
+	}
+	
+	/*@media (max-width: 800px) and (min-width: 700px){
+		div{color: red;}	
+	}*/
+
+	/* "," is the "or" operator*/
+	/*@media (max-width: 400px) , (min-width: 200px){
+		header {color: yellow;}
+	}*/
+
+	
+
+</style>
+
+<body>
+	<header>This is a totally new webpage.</header>
+	<!--<p> We are using bootstrap styles.</p>-->
+		
+		<!--<p></p>-->
+		<!--<p id="box2" ></p>
+		<p id="box3" ></p>
+		<p id="box4" ></p>
+		<section>
+		This is the regular content after the boxes.
+		</section>-->
+	
+		<!-- The code below uses bootstrap styling-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" style="background-color:blue;">
+					Hello. This is supposed to be a div. 
+				</div>
+				<div class="col-md-4" style="background-color:red;">
+					Hello. This is supposed to be another div. 
+				</div>
+			</div>
+
+		</div>
+
+
+		<! if you are using bootstrap, you should finish your code with the following lines. Check the jquery edition before you finalize.>
+		<!--
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		-->
+</body>
+</html>
